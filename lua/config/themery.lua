@@ -11,6 +11,11 @@ require("themery").setup({
 		"catppuccin",
 		-- "shado",
 		"shado-legacy",
+	    -- "shado",
+        "nightblossom",
+        "nightblossom-pastel",
+        "nightblossom-sakura",
+	    "shado-legacy",
 	},
 	livepreview = true,
 })

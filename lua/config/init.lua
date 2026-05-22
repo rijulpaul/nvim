@@ -36,6 +36,8 @@ vim.o.smartindent = true
 vim.o.hlsearch = true
 vim.o.cursorline = true
 
+vim.opt.clipboard:append("unnamedplus")
+
 vim.keymap.set("n", "<M-j>", ":resize +2 <CR>")
 vim.keymap.set("n", "<M-k>", ":resize -2 <CR>")
 

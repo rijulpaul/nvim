@@ -5,8 +5,6 @@ return {
 	{ "catppuccin/nvim", name = "catppuccin" },
 	{ "kevinm6/kurayami.nvim" },
 	{ "scottmckendry/cyberdream.nvim" },
-	-- { "maxmx03/fluoromachine.nvim" },
-	{ "xero/miasma.nvim" },
 	{
 		"rijulpaul/nightblossom.nvim",
 		config = function()
@@ -30,5 +28,7 @@ return {
 			})
 		end,
 	},
+	{ "maxmx03/fluoromachine.nvim" },
+	{ "xero/miasma.nvim" },
 	{ "Shadorain/shadotheme" },
 }
