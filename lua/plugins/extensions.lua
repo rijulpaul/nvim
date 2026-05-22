@@ -2,7 +2,19 @@ return {
 	-- Neovim plugin manager
 	{ "folke/lazy.nvim", version = false },
 	-- Syntax highlighting
-	{ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
+	{
+		"nvim-treesitter/nvim-treesitter",
+        branch = "master",
+		config = function()
+			require("lazy").setup({
+				"nvim-treesitter/nvim-treesitter",
+				lazy = false,
+				branch = "main",
+				build = ":TSUpdate",
+			})
+		end,
+		run = ":TSUpdate",
+	},
 	-- Fuzzy finder
 	{
 		"nvim-telescope/telescope.nvim",
@@ -105,16 +117,16 @@ return {
 		},
 	},
 	-- Notification pop-up
-	{
-		"rcarriga/nvim-notify",
-		config = function()
-			require("notify").setup({
-				render = "minimal", -- default, minimal, simple, compact
-				background_colour = "#000000",
-			})
-			vim.notify = require("notify")
-		end,
-	},
+	-- {
+	-- 	"rcarriga/nvim-notify",
+	-- 	config = function()
+	-- 		require("notify").setup({
+	-- 			render = "minimal", -- default, minimal, simple, compact
+	-- 			background_colour = "#000000",
+	-- 		})
+	-- 		vim.notify = require("notify")
+	-- 	end,
+	-- },
 	-- Autopair plugin
 	{ "windwp/nvim-autopairs", event = "InsertEnter", config = true },
 	-- Commenting plugin
@@ -193,4 +205,14 @@ return {
 	-- Change background transparency
 	{ "xiyaowong/transparent.nvim" },
 	{ "rktjmp/lush.nvim" },
+    -- { "tris203/precognition.nvim",
+    --     config = function()
+    --         require("precognition").toggle()
+    --     end,
+    -- },
+    { "kylechui/nvim-surround",
+        config = function()
+            require("nvim-surround").setup()
+        end,
+    },
 }

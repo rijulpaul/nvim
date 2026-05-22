@@ -1,15 +1,16 @@
 require("themery").setup({
 	themes = {
+		"nightblossom",
+		"nightblossom-sakura",
+		"nightblossom-pastel",
 		"vscode",
 		"gruvbox-material",
 		"miasma",
 		"cyberdream",
-		"fluoromachine",
 		"kurayami",
-		"cmyk-colourrrs",
 		"catppuccin",
-	    -- "shado",
-	    "shado-legacy",
+		-- "shado",
+		"shado-legacy",
 	},
 	livepreview = true,
 })

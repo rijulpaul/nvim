@@ -3,8 +3,8 @@ local actions = require("telescope.actions")
 require("telescope").setup({
 	defaults = {
 		winblend = 0,
-		-- borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
-		borderchars = { "═", "║", "═", "║", "╔", "╗", "╝", "╚" },
+		borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+		-- borderchars = { "═", "║", "═", "║", "╔", "╗", "╝", "╚" },
 		-- borderchars = { "━", "┃", "━", "┃", "┏", "┓", "┛", "┗" },
    
 		layout_strategy = "horizontal", -- horizontal, vertical

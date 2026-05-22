@@ -5,8 +5,8 @@ lint.linters_by_ft = {
 	cpp = { "cpplint" },
 	css = { "stylelint" },
 	html = { "htmlhint" },
-	javascript = { "oxlint" },
-	typescript = { "oxlint" },
+	javascript = { "denols" },
+	typescript = { "denols" },
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {

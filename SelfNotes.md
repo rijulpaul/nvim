@@ -21,8 +21,12 @@
 - **"{" "}"**   : Jump blank line
 - **"]" "["**   : Jump code block
 - **"(" ")"**   : Jump code block
-- **q [register]<action>q** : Record macor into register (a-z/A-Z)
+- **q [register]<action>q** : Record macro into register (a-z/A-Z)
 - **[count] @ [register]** : Execute macro at given register count times
+- **" [register] <yank>** : Yank content to register
+- **" [register] p** : Paste content from register
+- **"+p"** : To paste from system clipboard on Linux
+- **:reg** : To access all currently defined registers type
 
 ##### BarBar
 

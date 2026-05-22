@@ -12,6 +12,7 @@ require("formatter").setup({
 		html = { require("formatter.filetypes.html").prettierd },
 		javascript = { require("formatter.filetypes.javascript").prettierd },
 		typescript = { require("formatter.filetypes.typescript").prettierd },
+		tsx = { require("formatter.filetypes.typescript").prettierd },
 		["*"] = { require("formatter.filetypes.any").remove_trailing_whitespace },
 	},
 })

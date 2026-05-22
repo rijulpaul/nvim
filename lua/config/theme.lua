@@ -1,9 +1,9 @@
 vim.o.background = "dark"
 
-function theme(theme, trans)
+function theme(theme, transparent)
 	-- if theme == v then
 	require(theme).setup({
-		transparent = trans,
+		transparent = transparent,
 		italic_comments = true,
 		disable_nvimtree_bg = true,
 		borderless_telescope = true,
@@ -11,10 +11,6 @@ function theme(theme, trans)
 	})
 	vim.cmd.colorscheme(theme)
 end
-
--- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
--- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
--- vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
 
 v = "vscode" --$
 g = "gruvbox-material" --$

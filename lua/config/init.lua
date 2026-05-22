@@ -1,10 +1,12 @@
 require("config.lazy")
-require("config.theme")
+require("config.noice")
+-- require("config.theme")
 require("config.treesitter")
 require("config.tree")
 require("config.ufo")
 require("config.mason")
 require("config.lsp")
+require("config.lspkind")
 require("config.debug")
 require("config.lint")
 require("config.format")
@@ -16,7 +18,8 @@ require("config.hipatterns")
 require("config.inc-rename")
 require("config.refactoring")
 require("config.themery")
-require("config.noice")
+-- require("config.evilline")
+require("config.bubbleline")
 
 vim.opt.relativenumber = true
 vim.opt.number = true
@@ -31,6 +34,7 @@ vim.opt.scrolloff = 10
 vim.o.autoindent = true
 vim.o.smartindent = true
 vim.o.hlsearch = true
+vim.o.cursorline = true
 
 vim.keymap.set("n", "<M-j>", ":resize +2 <CR>")
 vim.keymap.set("n", "<M-k>", ":resize -2 <CR>")
